@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="x-piano : Web Components for Web Audio API">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>x-piano</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Korilakkuma/x-piano">View on GitHub</a>
+
+          <h1 id="project_title">x-piano</h1>
+          <h2 id="project_tagline">Web Components for Web Audio API</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Korilakkuma/x-piano/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Korilakkuma/x-piano/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="x-piano" class="anchor" href="#x-piano"><span class="octicon octicon-link"></span></a>x-piano</h1>
+
+<p>Web Components for Web Audio API</p>
+
+<h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>&lt;x-piano&gt; is GUI parts library (Web Components) for Web applications that use Web Audio API.
+&lt;x-piano&gt; has has the following features.</p>
+
+<ul>
+<li>Rich UI by Simple tag</li>
+<li>Play the One-Shot Audio</li>
+<li>Create Sound</li>
+<li>Simple Effector (Envelope Generator, Transpose, Glide)</li>
+</ul>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p> tag can be used by the following HTML.</p>
+
+<pre><code>&lt;link rel="import" href="x-piano/x-piano.html" /&gt;
+</code></pre>
+
+<p>To import 'x-piano.html', then describe &lt;x-piano&gt; tag.</p>
+
+<pre><code>&lt;x-piano&gt;&lt;/x-piano&gt;
+</code></pre>
+
+<p>Moreover, &lt;x-piano&gt; tag can have some attributes.<br>
+For example,</p>
+
+<pre><code>&lt;x-piano type="sawtooth" volume="0.4" attack="1" glide="1.5"&gt;&lt;/x-piano&gt;
+</code></pre>
+
+<p>Refer to the following table for attribute details.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Attribute</th>
+<th align="left">Description</th>
+<th align="left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="left">Sound Source</td>
+<td align="left">'piano' (default), 'sin', 'square', 'sawtooth', 'triangle'</td>
+</tr>
+<tr>
+<td align="left">volume</td>
+<td align="left">Master Volume</td>
+<td align="left">0.0 - 1.0 (1.0  by default)</td>
+</tr>
+<tr>
+<td align="left">attack</td>
+<td align="left">Envelope Generator (Attack)</td>
+<td align="left">0.0 - 1.0 (0.01 by default)</td>
+</tr>
+<tr>
+<td align="left">decay</td>
+<td align="left">Envelope Generator (Decay)</td>
+<td align="left">0.0 - 1.0 (0.3  by default)</td>
+</tr>
+<tr>
+<td align="left">sustain</td>
+<td align="left">Envelope Generator (Sustain)</td>
+<td align="left">0.0 - 1.0 (1.0  by default)</td>
+</tr>
+<tr>
+<td align="left">release</td>
+<td align="left">Envelope Generator (Release)</td>
+<td align="left">0.0 - 1.0 (1.0  by default)</td>
+</tr>
+<tr>
+<td align="left">transpose</td>
+<td align="left">Transpose</td>
+<td align="left">Integer   (0    by default)</td>
+</tr>
+<tr>
+<td align="left">glide</td>
+<td align="left">Glide (Oscillator only)</td>
+<td align="left">0.0 -     (0.0  by default)</td>
+</tr>
+</tbody>
+</table>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">x-piano maintained by <a href="https://github.com/Korilakkuma">Korilakkuma</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-41390233-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>

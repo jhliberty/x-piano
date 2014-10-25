@@ -123,8 +123,46 @@ For example,</p>
 <td align="left">Glide (Oscillator only)</td>
 <td align="left">0.0 -     (0.0  by default)</td>
 </tr>
+<tr>
+<td align="left">value</td>
+<td align="left">Keyboard Index</td>
+<td align="left">JSON (readonly)</td>
+</tr>
 </tbody>
 </table>
+
+<h2>
+<a name="callbacks" class="anchor" href="#callbacks"><span class="octicon octicon-link"></span></a>Callbacks</h2>
+
+<p>The following callbacks is invoked when keyboard was either down or up.</p>
+
+<pre><code>
+var xpiano = document.querySelector('x-piano');
+
+/**
+ * This callback is invoked when keyboard was down.
+ * @param {HTMLElement} element This argument is the instance of HTMLElement that is added event listener.
+ * @param {number} index This argument is the index of keyboard where event occurred.
+ *     This value is between 0 and 87.
+ */
+xpiano.onDownCallback = function(element, index) {
+    console.log(index + ' :');
+    console.dir(element);
+};
+
+/**
+ * This callback is invoked when keyboard was up.
+ * @param {HTMLElement} element This argument is the instance of HTMLElement that is added event listener.
+ * @param {number} index This argument is the index of keyboard where event occurred.
+ *     This value is between 0 and 87.
+ */
+xpiano.onUpCallback = function(element, index) {
+    console.log(index + ' :');
+    console.dir(element);
+};
+</code>
+</pre>
+
       </section>
     </div>
 

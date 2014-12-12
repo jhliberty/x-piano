@@ -155,7 +155,7 @@ var xpiano = document.querySelector('x-piano');
  * @param {number} index This argument is the index of keyboard where event occurred.
  *     This value is between 0 and 87.
  */
-xpiano.onDownCallback = function(element, index) {
+xpiano.onkeyboarddown = function(element, index) {
     console.log(index + ' :');
     console.dir(element);
 };
@@ -166,7 +166,7 @@ xpiano.onDownCallback = function(element, index) {
  * @param {number} index This argument is the index of keyboard where event occurred.
  *     This value is between 0 and 87.
  */
-xpiano.onUpCallback = function(element, index) {
+xpiano.onkeyboardup = function(element, index) {
     console.log(index + ' :');
     console.dir(element);
 };
